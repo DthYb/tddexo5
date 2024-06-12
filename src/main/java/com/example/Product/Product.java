@@ -1,10 +1,10 @@
 package com.example.Product;
 
 public class Product {
-    String name = "";
-    Integer sellIn = 0;
-    Integer quality = 0;
-    String type = "";
+    String name;
+    Integer sellIn;
+    Integer quality;
+    String type;
 
     public Product(String name, Integer sellIn, Integer quality, String type) {
         this.name = name;
@@ -35,5 +35,13 @@ public class Product {
     }
     public void setQuality(Integer quality) {
         this.quality = quality;
+    }
+
+    public void lowerQuality(Integer amount) {
+        this.quality -= amount;
+    }
+
+    public void increaseQuality(Integer amount) {
+        this.quality += amount;
     }
 }
