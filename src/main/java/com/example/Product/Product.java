@@ -6,6 +6,24 @@ public class Product {
     Integer quality = 0;
     String type = "";
 
+    public Product(String name, Integer sellIn, Integer quality, String type) {
+        this.name = name;
+        this.sellIn = sellIn;
+        this.quality = quality;
+        this.type = type;
+    }
+    public String getName() {
+        return name;
+    }
+    public void setName(String name) {
+        this.name = name;
+    }
+    public String getType() {
+        return type;
+    }
+    public void setType(String type) {
+        this.type = type;
+    }
     public Integer getSellIn() {
         return sellIn;
     }
