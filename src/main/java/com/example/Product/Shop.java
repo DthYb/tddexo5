@@ -14,6 +14,14 @@ private List<Product> products;
     }
     
     public void update(Product product) {
-        throw new UnsupportedOperationException("Not implemented");
+        if (product.getSellIn() <= 0) {
+            product.lowerQuality(2);
+            System.out.println("valid");
+            }
+            else {
+                product.lowerQuality(1);
+                System.out.println("not valid");
+            }
+            System.out.println(">:(");
     }
 }

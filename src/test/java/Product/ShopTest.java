@@ -5,7 +5,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.junit.Assert;
+//import org.junit.Assert;
 import org.junit.Test;
 
 import com.example.Product.Product;
@@ -13,9 +13,9 @@ import com.example.Product.Shop;
 
 public class ShopTest {
 
-    private Product tartine;
-    private Product jus;
-    private Product nutella;
+    public Product tartine;
+    public Product jus;
+    public Product nutella;
 
     public Shop setup(){
         List<Product> products = new ArrayList<Product>();
@@ -31,11 +31,11 @@ public class ShopTest {
     }
 
     @Test
-    public void whenSellInEquals0_QualityLowerTwiceFaster(){
+    public void Testerlogic(){
         Shop shop = this.setup();
-        shop.update(jus);
+        shop.update(this.jus);
 
-        assertEquals((Integer) 2, jus.getSellIn());
+        assertEquals((Integer) 5, this.jus.getQuality());
     }
 
 }
